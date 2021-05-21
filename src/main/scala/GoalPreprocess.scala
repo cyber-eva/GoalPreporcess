@@ -37,6 +37,7 @@ object GoalPreprocess {
       format("parquet").
       option("inferSchema","false").
       option("header","true").
+      option("mergeSchema","true").
       load(input_path)
 
 
