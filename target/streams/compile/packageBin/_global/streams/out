@@ -1,27 +1,17 @@
-[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/eva_01/IdeaProjects/GoalPreprocess/target/scala-2.11/goalpreprocess_2.11-0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/eva_01/IdeaProjects/GoalPreprocess/target/scala-2.12/goalpreprocess_2.12-0.1.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	GoalPreprocess_assist$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/eva_01/IdeaProjects/GoalPreprocess/target/scala-2.11/classes/GoalPreprocess_assist$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GoalPreprocess_assist$$anonfun$1$$anonfun$2.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/eva_01/IdeaProjects/GoalPreprocess/target/scala-2.11/classes/GoalPreprocess_assist$$anonfun$1$$anonfun$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/eva_01/IdeaProjects/GoalPreprocess/target/scala-2.12/classes/GoalPreprocess_assist$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	GoalPreprocess$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/eva_01/IdeaProjects/GoalPreprocess/target/scala-2.11/classes/GoalPreprocess$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GoalPreprocess$$anonfun$3.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/eva_01/IdeaProjects/GoalPreprocess/target/scala-2.11/classes/GoalPreprocess$$anonfun$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/eva_01/IdeaProjects/GoalPreprocess/target/scala-2.12/classes/GoalPreprocess$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	GoalPreprocess_assist.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/eva_01/IdeaProjects/GoalPreprocess/target/scala-2.11/classes/GoalPreprocess_assist.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/eva_01/IdeaProjects/GoalPreprocess/target/scala-2.12/classes/GoalPreprocess_assist.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	GoalPreprocess$$typecreator3$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/eva_01/IdeaProjects/GoalPreprocess/target/scala-2.11/classes/GoalPreprocess$$typecreator3$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/eva_01/IdeaProjects/GoalPreprocess/target/scala-2.12/classes/GoalPreprocess$$typecreator3$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	GoalPreprocess$$typecreator2$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/eva_01/IdeaProjects/GoalPreprocess/target/scala-2.11/classes/GoalPreprocess$$typecreator2$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GoalPreprocess$$anonfun$2.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/eva_01/IdeaProjects/GoalPreprocess/target/scala-2.11/classes/GoalPreprocess$$anonfun$2.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GoalPreprocess_assist$$anonfun$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/eva_01/IdeaProjects/GoalPreprocess/target/scala-2.11/classes/GoalPreprocess_assist$$anonfun$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GoalPreprocess$$anonfun$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/eva_01/IdeaProjects/GoalPreprocess/target/scala-2.11/classes/GoalPreprocess$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/eva_01/IdeaProjects/GoalPreprocess/target/scala-2.12/classes/GoalPreprocess$$typecreator2$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	GoalPreprocess.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/eva_01/IdeaProjects/GoalPreprocess/target/scala-2.11/classes/GoalPreprocess.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/eva_01/IdeaProjects/GoalPreprocess/target/scala-2.12/classes/GoalPreprocess.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	GoalPreprocess$$typecreator1$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/eva_01/IdeaProjects/GoalPreprocess/target/scala-2.11/classes/GoalPreprocess$$typecreator1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/eva_01/IdeaProjects/GoalPreprocess/target/scala-2.12/classes/GoalPreprocess$$typecreator1$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

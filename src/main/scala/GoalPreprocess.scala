@@ -26,6 +26,7 @@ object GoalPreprocess {
       "utm_source"       -> "(not set)",
       "utm_medium"       -> "(not set)",
       "utm_campaign"     -> "(not set)",
+      "utm_term"         -> "(not set)",
       "utm_content"      -> "(not set)",
       "campaign_id"      -> "(not set)",
       "profile_id"       -> "(not set)",
@@ -40,24 +41,12 @@ object GoalPreprocess {
       option("mergeSchema","true").
       load(input_path)
 
-
-//    val currentColumns = data.columns.toSeq
-//
-////    val currentColumns:List[String] = data.schema.names.map(_.toString).toList
-//    println("------------",currentColumns)
-
-    //Bad code. DEBUG!!!
-//    val exploreGoalCol:String = currentColumns.filter(_.startsWith("ga_goal")).take(1)(0)
-//    val goal:String = exploreGoalCol.split("ga_goal")(1).split("completions")(0)
-
     val data_work = data.
       select(
         col("ga_sessioncount").cast(sql.types.StringType),
         col("ga_clientid").cast(sql.types.StringType),
         col("ga_datehourminute").cast(sql.types.StringType)
       )
-
-//    data_work.show(20)
 
     val data_rename = colsToRename.foldLeft(data_work){
       (acc,names) => acc.withColumnRenamed(names._1,names._2)
@@ -69,26 +58,37 @@ object GoalPreprocess {
 
     val data_datereg = data_add.
       withColumn(
-        "datehoureminute",
+        "datehourminute",
         regDate_udf(col("ga_datehourminute"),col("interaction_type"))
       )
 
-    data_datereg.show(20)
 
     val data_utc = data_datereg.
       withColumn(
         "HitTimeStamp",
-        unix_timestamp(col("datehoureminute"),"yyyy-MM-dd HH:mm:ss") * 1000 // milli
+        unix_timestamp(col("datehourminute"),"yyyy-MM-dd HH:mm:ss") * 1000 // milli
       ).
       withColumn("goal",lit(goal))
 
-    val added_cols:List[String] = colsToAdd.keySet.toList
-    val loaded_cols:List[String] = List("ga_sessioncount",colsToRename("ga_clientid"))
-    val created_cols:List[String] = List("datehoureminute","HitTimeStamp","goal")
-    val selected_cols:List[String] = added_cols ++ loaded_cols ++ created_cols
 
-    val data_select = data_utc.
-      select(selected_cols.map(c => col(c)): _*)
+    val data_select = data_utc.select(
+      $"interaction_type",
+      $"src",
+      $"ClientID",
+      $"goal",
+      $"HitTimeStamp",
+      $"ga_sessioncount",
+      $"utm_source",
+      $"utm_medium",
+      $"utm_campaign",
+      $"utm_term",
+      $"utm_content",
+      $"campaign_id",
+      $"profile_id",
+      $"creative_id",
+      $"ad_id",
+      $"datehourminute"
+    )
 
 
     data_select.show(20)
